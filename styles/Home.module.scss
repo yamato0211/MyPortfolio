@@ -1,0 +1,97 @@
+.main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 20px 0;
+}
+
+.publishedAt {
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 40px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.thumbnailImage {
+  width: 600px;
+  height: 350px;
+  object-fit: contain;
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 8px gray;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.thumbnailImage:hover {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+  background-color: white;
+}
+
+.post {
+  &>h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px 0 20px;
+    background-color: #eee;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  &>h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0 16px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  &>h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  &>p {
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+  }
+
+  &>ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+
+  &>ul {
+    list-style-position: inside;
+  }
+}
+
+.boldText {
+  color: black;
+  font-weight: 550;
+}
+
+.lightText {
+  color: #999;
+}
+
+.center {
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 400%;
+  border-bottom: 1px gray solid;
+  width: 70%;
+  margin: 4% auto;
+}
